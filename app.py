@@ -10,7 +10,7 @@ def temperature():
     zipcode = request.form['zip']
     r = requests.get('http://api.openweathermap.org/data/2.5/weather?zip='+zipcode+'&us&appid=222018ba958b039d5f55f5e85b18a06a')
     json_object = r.json()
-    temp_k = float(json_object['main']['temp']
+    temp_k = float(json_object['main']['temp'])
     loca_2 = float(json_object['coord']['lon'])
     loca_1 = float(json_object['coord']['lat'])
     temp_f = (temp_k - 273.15) * 1.8 + 32
