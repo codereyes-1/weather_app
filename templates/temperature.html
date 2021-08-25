@@ -18,7 +18,7 @@
 <body>
     <h1> The current temperature (F) is : {{ temp }} degrees. </h1>
     <h2> 🌱D8A-Banks thanks you for using our software</h2>
-    <div id="mapid" style = " height: 490px; width: 620px; "></div>
+    <div id="mapid" style = " height: 420px; width: 620px; "></div>
     <script type=text/javascript>
 
 
@@ -29,7 +29,7 @@
         maxZoom: 18,
         id: 'mapbox/streets-v11',
         tileSize: 512,
-        zoomOffset: 0,
+        zoomOffset: -1,
         accessToken: 'pk.eyJ1Ijoid2FrYXJuYWxkIiwiYSI6ImNrZ240ajkzbzFxbXQyeW5zcng2MzkxZHAifQ.bIH6yzgzyyX_otQQZQne0A'
         }).addTo(mymap);
         marker.setLatLng([{{lat}}, {{lon}}]);
